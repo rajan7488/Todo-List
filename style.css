@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1{
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+#inputvalue{
+    width: 15rem;
+    border: none;
+    padding: 7px 4px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 18px;
+}
+
+button{
+    margin-left: 2.5rem;
+    /* height:1.8rem; */
+    background-color: rgb(201, 201, 100);
+    color: black;
+    border: 3px solid rgb(202, 202, 94); 
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    padding: 8px 15px;
+    box-shadow: 0px 0px   5px rgb(202, 202, 94) ;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+button:hover{
+    background: transparent;
+    color: white;
+}
+
+.main-todo-div{
+    display: grid;
+    width: 16rem;
+    margin-top: 2rem;
+    grid-template-columns: 1fr 0.3fr;
+    align-items: center;
+    height: auto;
+}
+
+li{
+    list-style-type: circle;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: 1s linear;
+}
+li:hover{
+    color: #feac5e;
+}
